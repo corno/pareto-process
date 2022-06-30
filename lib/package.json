@@ -1,0 +1,26 @@
+{
+  "author": "Corno",
+  "bugs": {
+    "url": "https://github.com/corno/pareto-process/issues"
+  },
+  "description": "",
+  "homepage": "https://github.com/corno/pareto-process#readme",
+  "keywords": [],
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "main": "./dist",
+  "types": "./dist",
+  "name": "pareto-process-lib",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/corno/pareto-process.git"
+  },
+  "dependencies": {
+    "pareto-lang-lib": "^0.7.0"
+  },
+  "scripts": {},
+  "version": "0.0.2",
+  "content-fingerprint": "e98cdc16a71ca3d79f74e80baa2af569d20feadf"
+}
