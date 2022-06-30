@@ -18,9 +18,13 @@
     "url": "git+https://github.com/corno/pareto-process.git"
   },
   "dependencies": {
+    "pareto-async-api": "^0.1.0",
     "pareto-lang-lib": "^0.7.0"
   },
   "scripts": {},
   "version": "0.0.2",
-  "content-fingerprint": "e98cdc16a71ca3d79f74e80baa2af569d20feadf"
+  "devDependencies": {
+    "@types/node": "^18.0.0"
+  },
+  "content-fingerprint": "e827c415fdbc9af9b9ceaea4d1fd19ebff6ef75f"
 }
