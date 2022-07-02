@@ -1,0 +1,20 @@
+{
+  "author": "Corno",
+  "description": "process functions for pareto",
+  "files": [
+    "dist"
+  ],
+  "license": "ISC",
+  "main": "dist/index.js",
+  "name": "pareto-process-api",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/corno/pareto-process.git"
+  },
+  "types": "dist/index.d.ts",
+  "version": "0.0.0",
+  "dependencies": {
+    "pareto-async-api": "^0.1.0"
+  },
+  "content-fingerprint": "81ff63d9fd2fe4d416ce9903427cc62abf1181f7"
+}

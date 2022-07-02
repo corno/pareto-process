@@ -1,20 +1,38 @@
 import * as cp from "child_process"
 import * as asyncAPI from "pareto-async-api"
 
-export function createLeafProcessCall<T>(
-    command: string,
-    onResult: (stdout: string) => T,
-    onError: (err: cp.ExecException, stderr: string) => T,
+
+export type Call_Data = string
+
+export type Call_Interface<T> = {
+    onResult: (stdout: string) => asyncAPI.IAsync<T>,
+    onError: (stderr: string) => asyncAPI.IAsync<T>,
+
+}
+
+export type Call = <T>(
+    $d: Call_Data,
+    $i: Call_Interface<T>
+) => asyncAPI.IAsync<T> 
+
+export type API = {
+    call: Call
+}
+
+export function call<T>(
+    $d: Call_Data,
+    $i: Call_Interface<T>
 ): asyncAPI.IAsync<T> {
     return {
         execute: (cb) => {
             cp.exec(
-                command,
+                $d,
                 (err, stdout, stderr) => {
                     if (err !== null) {
-                        cb(onError(err, stderr))
+                        console.error("CHILD PROCESS CALL ERROR, ERROR INFO IS MISSING")
+                        $i.onError(stderr).execute(cb)
                     } else {
-                        cb(onResult(stdout))
+                        $i.onResult(stdout).execute(cb)
                     }
                 }
             )
@@ -22,23 +40,6 @@ export function createLeafProcessCall<T>(
     }
 }
 
-export function createCompositeProcessCall<T>(
-    command: string,
-    onResult: (stdout: string) => asyncAPI.IAsync<T>,
-    onError: (err: cp.ExecException, stderr: string) => asyncAPI.IAsync<T>,
-): asyncAPI.IAsync<T> {
-    return {
-        execute: (cb) => {
-            cp.exec(
-                command,
-                (err, stdout, stderr) => {
-                    if (err !== null) {
-                        onError(err, stderr).execute(cb)
-                    } else {
-                        onResult(stdout).execute(cb)
-                    }
-                }
-            )
-        }
-    }
+export const $: API = {
+    call: call
 }
