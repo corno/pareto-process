@@ -19,12 +19,13 @@
   },
   "dependencies": {
     "pareto-async-api": "^0.1.0",
-    "pareto-lang-lib": "^0.7.0"
+    "pareto-lang-lib": "^0.7.0",
+    "pareto-process-api": "^0.2.0"
   },
   "scripts": {},
   "version": "0.1.0",
   "devDependencies": {
     "@types/node": "^18.0.0"
   },
-  "content-fingerprint": "e7ae1ebbfb54393a70fa8b77653ee4d772589837"
+  "content-fingerprint": "b444c7bac6c01d040b4c92b72f263ba270d07a04"
 }

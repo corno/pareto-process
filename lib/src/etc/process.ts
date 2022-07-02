@@ -1,27 +1,10 @@
 import * as cp from "child_process"
+import * as api from "pareto-process-api"
 import * as asyncAPI from "pareto-async-api"
 
-
-export type Call_Data = string
-
-export type Call_Interface<T> = {
-    onResult: (stdout: string) => asyncAPI.IAsync<T>,
-    onError: (stderr: string) => asyncAPI.IAsync<T>,
-
-}
-
-export type Call = <T>(
-    $d: Call_Data,
-    $i: Call_Interface<T>
-) => asyncAPI.IAsync<T> 
-
-export type API = {
-    call: Call
-}
-
 export function call<T>(
-    $d: Call_Data,
-    $i: Call_Interface<T>
+    $d: api.Call_Data,
+    $i: api.Call_Interface<T>
 ): asyncAPI.IAsync<T> {
     return {
         execute: (cb) => {
@@ -40,6 +23,6 @@ export function call<T>(
     }
 }
 
-export const $: API = {
+export const $: api.API = {
     call: call
 }
