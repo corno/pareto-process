@@ -12,7 +12,7 @@ export function call<T>(
                 $d,
                 (err, stdout, stderr) => {
                     if (err !== null) {
-                        $i.onError(stderr, 0).execute(cb)
+                        $i.onError(stderr, err.code).execute(cb)
                     } else {
                         $i.onResult(stdout).execute(cb)
                     }
