@@ -19,12 +19,12 @@
   },
   "dependencies": {
     "pareto-lang-lib": "^0.8.0",
-    "pareto-process-api": "^0.2.2"
+    "pareto-process-api": "^0.3.0"
   },
   "version": "0.4.2",
   "devDependencies": {
     "@types/node": "^18.0.1"
   },
   "native": true,
-  "content-fingerprint": "6f99ce6d8f4f49ed00025309c469a01707756a2b"
+  "content-fingerprint": "652ff0078bb1c94be9dab03cdfb0cd03792a34b5"
 }
