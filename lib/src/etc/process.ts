@@ -12,7 +12,6 @@ export function call<T>(
                 $d,
                 (err, stdout, stderr) => {
                     if (err !== null) {
-                        console.error("CHILD PROCESS CALL ERROR, ERROR INFO IS MISSING")
                         $i.onError(stderr).execute(cb)
                     } else {
                         $i.onResult(stdout).execute(cb)
