@@ -23,8 +23,8 @@
   },
   "version": "0.5.0",
   "devDependencies": {
-    "@types/node": "^18.0.1"
+    "@types/node": "^18.0.3"
   },
   "native": true,
-  "content-fingerprint": "9440289a0c6dd245c7073138e115a544961df282"
+  "content-fingerprint": "caae0262701e99472e3c26edf7e93278ff79e215"
 }
