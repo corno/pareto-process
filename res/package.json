@@ -21,7 +21,7 @@
     "pareto-lib-core": "^0.4.0",
     "pareto-process-api": "^0.6.0"
   },
-  "version": "0.7.0",
+  "version": "0.8.0",
   "devDependencies": {
     "@types/node": "^18.0.3"
   },
