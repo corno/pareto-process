@@ -14,6 +14,7 @@
   "types": "dist/index.d.ts",
   "version": "0.5.0",
   "dependencies": {
+    "pareto-api-core": "^0.1.0"
   },
   "content-fingerprint": "aebf8b5b22d80de2bda1ca0fbf39b9945b985c3a"
 }
