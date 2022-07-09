@@ -18,7 +18,7 @@
     "url": "git+https://github.com/corno/pareto-process.git"
   },
   "dependencies": {
-    "pareto-lib-core": "^0.3.0",
+    "pareto-lib-core": "^0.4.0",
     "pareto-process-api": "^0.6.0"
   },
   "version": "0.7.0",
@@ -26,5 +26,5 @@
     "@types/node": "^18.0.3"
   },
   "native": true,
-  "content-fingerprint": "613c1a481a663f042b65a444e2f233f3cbce2709"
+  "content-fingerprint": "914474a00c6aec8cbbbfd6c9cb4c52687bc2c0e4"
 }
