@@ -1,11 +1,11 @@
 import * as cp from "child_process"
 import * as api from "pareto-process-api"
-import * as asyncAPI from "pareto-async-api"
+import * as pl from "pareto-lib-core"
 
 export function call<T>(
     $d: api.Call_Data,
     $i: api.Call_Interface<T>
-): asyncAPI.IAsync<T> {
+): pl.IAsync<T> {
     return {
         execute: (cb) => {
             cp.exec(
