@@ -12,7 +12,7 @@
   "license": "ISC",
   "main": "./dist",
   "types": "./dist",
-  "name": "pareto-process-lib",
+  "name": "pareto-process-res",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/corno/pareto-process.git"
