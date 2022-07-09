@@ -25,5 +25,5 @@
     "@types/node": "^18.0.3"
   },
   "native": true,
-  "content-fingerprint": "4ceb6c0ce6e2d51695348056e434c241ffb0c5ee"
+  "content-fingerprint": "c0ff1844b79f58d363e86b25987ec572e3f321d7"
 }
